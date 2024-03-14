@@ -1,0 +1,82 @@
+[
+  {
+    "input": "copy file into docker container",
+    "output": "docker cp ./some_file CONTAINER:/work"
+  },
+  {
+    "input": "how to run nodejs file on command line",
+    "output": "node --experimental-modules src/file.js"
+  },
+  {
+    "input": "how to rebase in git",
+    "output": "git pull origin --rebase"
+  },
+  {
+    "input": "how to view all ports being used on mac",
+    "output": "sudo lsof -iTCP -sTCP:LISTEN -n -P"
+  },
+  {
+    "input": "how to clean node cache",
+    "output": "npm cache clean --force"
+  },
+  {
+    "input": "What is the meaning of life?",
+    "output": "Appreciate every day"
+  },
+  {
+    "input": "favorite food",
+    "output": "pizza"
+  },
+  {
+    "input": "favorite state",
+    "output": "mass"
+  },
+  {
+    "input": "favorite city",
+    "output": "boston"
+  },
+  {
+    "input": "favorite rock",
+    "output": "igneous"
+  },
+  {
+    "input": "favorite cloud",
+    "output": "stratus"
+  },
+  {
+    "input": "favorite company to work for",
+    "output": "Adobe"
+  },
+  {
+    "input": "destructure a Javascript array",
+    "output": "const [first, second] = [1, 2];"
+  },
+  {
+    "input": "destructure a Javascript object",
+    "output": "const { name, age } = { name: 'John', age: 25 };"
+  },
+  {
+    "input": "create Javascript strings with embedded expressions",
+    "output": "const greeting = `Hello, ${name}!`;"
+  },
+  {
+    "input": "provide a default value if none is defined in Javascript",
+    "output": "const defaultValue = someVariable ?? 'default';"
+  },
+  {
+    "input": "create a git alias",
+    "output": "git config --global alias.co checkout"
+  },
+  {
+    "input": "example of an arrow function in Javascript",
+    "output": "const add = (a, b) => a + b;"
+  },
+  {
+    "input": "example of optional chaining in Javascript",
+    "output": "const address = user?.address?.city;"
+  },
+  {
+    "input": "retrieving an enviroment variable in Javascript",
+    "output": "const apiKey = process.env.API_KEY;"
+  }
+]
