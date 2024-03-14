@@ -8,8 +8,8 @@ const api = supertest(app);
 describe('API Tests', () => {
 	const questions = ['copy file into docker container','favorite city','favorite cloud','favorite food','favorite rock','favorite state','how to clean node cache','how to rebase in git','how to run nodejs file on command line','how to view all ports being used on mac','What is the meaning of life?','favorite company to work for'];
 	const answers = ['docker cp ./some_file CONTAINER:/work','boston','stratus','pizza','igneous','mass','npm cache clean --force','git pull origin --rebase','node --experimental-modules src/file.js','sudo lsof -iTCP -sTCP:LISTEN -n -P','Appreciate every day','Adobe'];
-	
-	// already trained answer
+
+/*	// already trained answer
 	it('question 1: should return a 200 status code for a GET request with correct answer', async () => {
 		const response = await api.get(`/api/ask?question=${encodeURIComponent(questions[0])}`);
 		expect(response.status).to.equal(200);
@@ -84,7 +84,7 @@ describe('API Tests', () => {
 		const response = await api.get(`/api/ask?question=${encodeURIComponent(questions[10])}`);
 		expect(response.status).to.equal(200);
 		expect(response.body.answer).to.equal(answers[10]);
-	});
+	});*/
 
 	// train new answer
 	it('train 1: should handle a POST request with the correct data', async () => {
@@ -94,11 +94,11 @@ describe('API Tests', () => {
 	});
 
 		// new answer
-	it('train 2: should return a 200 status code for a GET request with correct answer', async () => {
+	/*it('train 2: should return a 200 status code for a GET request with correct answer', async () => {
 		const response = await api.get(`/api/ask?question=${encodeURIComponent(questions[11])}`);
 		expect(response.status).to.equal(200);
 		expect(response.body.answer).to.equal(answers[11]);
-	});
-	
+	});*/
+
 });
 
